@@ -1,0 +1,38 @@
+{
+  "name": "autoreportoff",
+  "version": "1.0.0",
+  "description": "Aplicación portable de revisión operacional U8/U9 y exportación SSPD",
+  "main": "src/core.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/core.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "package": "node tools/package.cjs",
+    "samples": "node tools/samples.cjs",
+    "test:portable": "node tests/portable.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosoygreen/AutoReportOFF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yosoygreen/AutoReportOFF/issues"
+  },
+  "homepage": "https://github.com/yosoygreen/AutoReportOFF#readme",
+  "dependencies": {
+    "jszip": "3.10.1",
+    "leaflet": "1.9.4",
+    "papaparse": "5.5.3",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2"
+  }
+}
